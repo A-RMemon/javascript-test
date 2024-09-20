@@ -166,14 +166,13 @@
 
 // Q no 15
 
-// let palindrome = (str)=>{
-//     let ans = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-//     let ans2 = ans.split('').reverse().join('');
-//     if(ans[0]!= ans2[0] ){
-//         return false
-//     }return true
-// }
-// console.log(palindrome('Eva, Can I Stab Bats In A Cave?'));
-// console.log(palindrome('Was It A Rat I Saw?' ));
-// console.log(palindrome('i am sick'));
-// console.log(palindrome('i am sick'));
+let palindrome = (str)=>{
+    let ans = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    let ans2 = ans.split('').reverse().join('');
+    return ans === ans2
+}
+console.log(palindrome('Eva, Can I Stab Bats In A Cave?'));
+console.log(palindrome('Was It A Rat I Saw?' ));
+console.log(palindrome('i am sick'));
+console.log(palindrome('i am sick'));
+console.log(palindrome('raccar'))
